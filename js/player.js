@@ -1,25 +1,22 @@
 
-
-//Player class
 class Player extends Populate {
     constructor () {
       super();
       this.x = 0;
       this.y = 415;
       this.sprite = "images/char-boy.png";
+      this.moveSpeed = 5
     }
-  
-  //key input for Player
-    handleInput (input) {
+      handleInput (input) {
       switch (input) {
         case "left":
-          if (this.x >= this.sideways) {
-            this.x -= this.sideways;
+          if (this.x >= this.moveSpeed) {
+            this.x -= this.moveSpeed;
           }
           break;
         case "right":
-          if (this.x <= this.sideways * 3) {
-            this.x += this.sideways;
+          if (this.x <= this.moveSpeed * 3) {
+            this.x += this.moveSpeed;
           }
           break;
         case "up":
@@ -34,13 +31,13 @@ class Player extends Populate {
           break;
       }
     }
-  
-    //updates player and sets condition for collision & win
-    update () {
+      update () {
       for (let enemy of allEnemies) {
+          // enemy collision
         if (this.y === enemy.y && (enemy.x + enemy.sideways / 2 > this.x && enemy.x < this.x + this.sideways / 2)) {
           this.reset();
         }
+        
       }
     }
   }
