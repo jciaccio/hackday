@@ -3,6 +3,8 @@ class Player extends Populate {
     constructor () {
       super();
       this.score=0;
+
+      this.lives=5;
       this.startx = gameSetting.tileH*5;
       this.starty = (gameSetting.tileH)*9;
       this.x = this.startx
@@ -73,6 +75,9 @@ class Player extends Populate {
                     this.x=this.startx
 
                     this.y=this.starty
+                    this.lives--
+                    let s=document.getElementById('lives')
+                      s.innerHTML="lives: "+this.lives
         }
         
       }

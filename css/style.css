@@ -26,7 +26,7 @@ header#instructions	{
 	color: #ffffff;
 	text-align: center;
 }
-footer#scores	{
+footer#scores, div#lives 	{
 	font-family: 'Century Gothic';
 	font-weight: strong;
 	text-align: center;
