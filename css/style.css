@@ -1,3 +1,42 @@
-body {
-    text-align: center;
+body 	{
+	margin-left: auto;
+	margin-right: auto;
+	background: rgb(0, 51, 0);
 }
+/* text-shadow comes from variation on https://www.geeksforgeeks.org/css-font-border/ */
+header#title	{
+	font-family: 'Century Gothic';
+	font-weight: strong;
+	text-align: center;
+	font-size: 36pt;
+	color: #00ff00;
+	text-shadow: 0 0 3px #FF8C00, 0 0 5px #FFFFFF;
+}
+header#subtitle	{
+	font-family: 'Century Gothic';
+	font-weight: strong;
+	text-align: center;
+	font-size: 14pt;
+	color: #00ff00;
+	text-shadow: 0 0 2px #FF8C00, 0 0 4px #FFFFFF;
+}
+header#instructions	{
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 10pt;
+	color: #ffffff;
+	text-align: center;
+}
+footer#scores	{
+	font-family: 'System', sans-serif;
+	font-weight: bold;
+	font-size: 12pt;
+	text-align: center;
+	color: #ffffff;
+}
+canvas	{
+	margin: auto;
+	display: block;
+	clear: both;
+}
+
+	
