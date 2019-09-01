@@ -8,11 +8,9 @@ class Populate {
     this.sideways = 101;
     this.upDown = 83;
   }
-
   render () {
-    ctx.drawImage(Resources.get(this.sprite), this.x, this.y,gameSetting.tileW,gameSetting.tileH);
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y,this.width||gameSetting.tileW,this.height||gameSetting.tileH);
   }
-
   reset () {
     this.x = 0;
     this.y = 415;
