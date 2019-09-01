@@ -27,11 +27,12 @@ header#instructions	{
 	text-align: center;
 }
 footer#scores	{
-	font-family: 'System', sans-serif;
-	font-weight: bold;
-	font-size: 12pt;
+	font-family: 'Century Gothic';
+	font-weight: strong;
 	text-align: center;
-	color: #ffffff;
+	font-size: 18pt;
+	color: #00ff00;
+	text-shadow: 0 0 2px #FF8C00, 0 0 4px #FFFFFF;
 }
 canvas	{
 	margin: auto;
